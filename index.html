@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <link type="Image/x-icon" href="img/Favicon.svg" rel="icon">
     <title>W-wave</title>
@@ -14,20 +14,53 @@
 <body class="page">
     <header class="header">
         <div class="container">
-            <div class="row header__content">
+            <div class="header__content">
                 <div class="header__left">
                     <picture class="header__logo-img">
-                        <source media="(max-width: px)" srcset="">
-                        <source media="(max-width: px)" srcset="">
-                        <source media="(max-width: px)" srcset="">
-                        <img src="" alt="">
+                        <source media="(max-width: px)" srcset="img/">
+                        <source media="(max-width: 480px)" srcset="img/Logo_320.svg">
+                        <source media="(max-width: 1200px)" srcset="img/Logo_1024.svg">
+                        <img src="img/Logo.svg" alt="Logo">
                     </picture>
                 </div>
                 <div class="header__middle">
-
+                    <nav class="header-nav">
+                        <ul class="header-nav__list list-reset">
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav__item-link">
+                                    Подкасты
+                                </a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav__item-link">
+                                    Передачи
+                                </a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav__item-link">
+                                    Гости
+                                </a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav__item-link">
+                                    Плейлисты
+                                </a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="" class="header-nav__item-link">
+                                    О нас
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="header__right">
-
+                    <button class="button-search__icon btn-reset">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                      
+                    </button>
                 </div>
             </div>
         </div>

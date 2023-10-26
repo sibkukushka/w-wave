@@ -82,3 +82,46 @@ html {
   .page {
     font-family: 'Muller', sans-serif;
   }
+
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  .header__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 31px;
+    padding-bottom: 34px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .header__left {
+    margin-right: 80px;
+  }
+
+  .header__middle {
+    margin-right: auto;
+  }
+
+  .header-nav__list {
+    display: flex;
+    gap: 58px;
+  }
+
+  .header-nav__item {
+    color: #121723;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .button-search__icon {
+    width: 24px;
+    height: 24px;
+    stroke: #6D31EE;
+  }
