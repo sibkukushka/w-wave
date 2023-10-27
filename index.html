@@ -1,69 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/media.css">
 
-    <link type="Image/x-icon" href="img/Favicon.svg" rel="icon">
-    <title>W-wave</title>
+  <link type="Image/x-icon" href="img/Favicon.svg" rel="icon">
+  <title>W-wave</title>
 </head>
+
 <body class="page">
-    <header class="header">
-        <div class="container">
-            <div class="header__content">
-                <div class="header__left">
-                    <picture class="header__logo-img">
-                        <source media="(max-width: px)" srcset="img/">
-                        <source media="(max-width: 480px)" srcset="img/Logo_320.svg">
-                        <source media="(max-width: 1200px)" srcset="img/Logo_1024.svg">
-                        <img src="img/Logo.svg" alt="Logo">
-                    </picture>
-                </div>
-                <div class="header__middle">
-                    <nav class="header-nav">
-                        <ul class="header-nav__list list-reset">
-                            <li class="header-nav__item">
-                                <a href="" class="header-nav__item-link">
-                                    Подкасты
-                                </a>
-                            </li>
-                            <li class="header-nav__item">
-                                <a href="" class="header-nav__item-link">
-                                    Передачи
-                                </a>
-                            </li>
-                            <li class="header-nav__item">
-                                <a href="" class="header-nav__item-link">
-                                    Гости
-                                </a>
-                            </li>
-                            <li class="header-nav__item">
-                                <a href="" class="header-nav__item-link">
-                                    Плейлисты
-                                </a>
-                            </li>
-                            <li class="header-nav__item">
-                                <a href="" class="header-nav__item-link">
-                                    О нас
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__right">
-                    <button class="button-search__icon btn-reset">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                                                      
-                    </button>
-                </div>
-            </div>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__left">
+          <picture class="header__logo-img">
+            <source media="(max-width: px)" srcset="img/">
+            <source media="(max-width: 480px)" srcset="img/Logo_320.svg">
+            <source media="(max-width: 1200px)" srcset="img/Logo_1024.svg">
+            <img src="img/Logo.svg" alt="Logo">
+          </picture>
         </div>
-    </header>
+        <div class="header__middle">
+          <nav class="header-nav">
+            <ul class="header-nav__list list-reset">
+              <li class="header-nav__item">
+                <a href="#podcasts" class="header-nav__item-link">
+                  Подкасты
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#broadcasts" class="header-nav__item-link">
+                  Передачи
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#guests" class="header-nav__item-link">
+                  Гости
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#playlists" class="header-nav__item-link">
+                  Плейлисты
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#about-us" class="header-nav__item-link">
+                  О нас
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__right">
+          <button class="button-search__icon btn-reset">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__content-left">
+            <h1 class="hero__title">
+              <span class="hero__title-radio">
+                Радио
+              </span>
+              <span class="hero__title-wave">
+                W-Wave
+              </span>
+            </h1>
+            <p class="hero__descr descr">
+              Привет, на&nbsp;связи W-Wave! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)
+            </p>
+            <button class="hero__btn btn-reset">
+              <a href="" class="hero__btn-link">
+                Слушать эфир
+              </a>
+            </button>
+          </div>
+          <div class="hero__content-right">
+            <picture class="hero__img">
+              <source media="max-width: 1200px" srcset="img/hero-img_1024.png">
+              <img src="img/hero-img.png" alt="hero-img">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
-</html> 
+
+</html>
