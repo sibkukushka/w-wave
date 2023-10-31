@@ -37,6 +37,11 @@
     border-top: 1px solid var(--bright-gray);
   }
 
+  .hero__content {
+    padding-top: 89px;
+    padding-bottom: 83px;
+  }
+  
   .hero__content-left {
     max-width: 539px;
   }
@@ -67,6 +72,11 @@
   }
 
   /* HERO */
+  .hero__content {
+    padding-top: 96px;
+    padding-bottom: 90px;
+  }
+
   .hero__content-left {
     max-width: 539px;
   }
@@ -74,12 +84,26 @@
   .hero__content-right {
     display: none;
   }
+
+  /* PODCASTS */
+  .podcasts__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .podcasts__item {
+    width: 100%;
+  }
 }
 
 @media(max-width: 480px) {
   /* GLOBE */
   .container {
     max-width: 256px;
+  }
+
+  .sec__title {
+    font-size: 24px;
   }
 
   .descr {
@@ -104,6 +128,7 @@
   /* HERO */
   .hero__content {
     padding-top: 41px;
+    padding-bottom: 41px;
   }
 
   .hero__title {
@@ -115,4 +140,71 @@
     font-size: 16px;
     padding: 16px 46px;
   }
+
+  /* PODCASTS */
+  .podcasts__content {
+    padding-top: 54px;
+    padding-bottom: 52px;
+  }
+
+  .podcasts__title {
+    margin-bottom: 21px;
+  }
+
+  .podcasts__list {
+    gap: 31px;
+  }
+
+  .podcasts__item {
+    padding: 96px 0 26px 16px;
+    background-position: top center;
+    background-size: 256px 72px;
+  }
+
+  .podcasts__item-1 {
+    background-image: url("/img/podcast-1_320.jpg");
+  }
+  
+  .podcasts__item-2 {
+    background-image: url("/img/podcast-2_320.jpg");
+  }
+  
+  .podcasts__item-3 {
+    background-image: url("/img/podcast-3_320.jpg");
+  }
+  
+  .podcasts__item-4 {
+    background-image: url("/img/podcast-4_320.jpg");
+  }
+  
+  .podcasts__item-5 {
+    background-image: url("/img/podcast-5_320.jpg");
+  }
+  
+  .podcasts__item-6 {
+    background-image: url("/img/podcast-6_320.jpg");
+  }
+  
+  .podcasts__item-7 {
+    background-image: url("/img/podcast-7_320.jpg");
+  }
+  
+  .podcasts__item-8 {
+    background-image: url("/img/podcast-8_320.jpg");
+  }
+
+  .item__date {
+    top: 0;
+    bottom: 169px;
+  }
+
+  .podcasts__item-title {
+    font-size: 16px;
+  }
+
+  .podcasts__item-descr {
+    font-size: 12px;
+  }
+
+
 }
