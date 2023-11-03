@@ -54,6 +54,12 @@
   .hero__descr {
     margin-bottom: 20px;
   }
+
+  /* BROADCASTS */
+  .broadcasts__item {
+    --offsets: 1;
+    --items: 2;
+  }
 }
 
 @media(max-width: 998px) {

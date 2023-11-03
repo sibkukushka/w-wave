@@ -106,8 +106,8 @@ p {
 
 .descr {
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
+  line-height: 150%;
 }
 
 .sec__title {
@@ -307,5 +307,115 @@ p {
 .podcasts__item-descr {
   color: #A1A6B4;
   font-size: 16px;
+  font-weight: 400;
+}
+
+/* BROADCASTS */
+.broadcasts__container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.broadcasts__title{
+  margin-bottom: -36px;
+}
+
+.broadcasts__content {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.broadcasts__left {
+  max-width: 255px;
+  padding-top: 115px;
+  background-image: url("/img/broadcasts_mic.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 65px 89px;
+}
+
+.brodcasts__btn {
+  color: var(--deep-dark-gray);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 9px 55px;
+  border-radius: 77px;
+  border: 2px solid var(--deep-dark-gray);
+  margin-bottom: 12px;
+}
+
+.broadcasts__left-descr {
+  color: var(--gray);
+}
+
+/* .broacasts__right {
+  max-width: 825px;
+} */
+
+.broadcasts__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.broadcasts__item {
+  --offsets: 2;
+  --items: 3;
+  width: calc((100% - (30px * var(--offsets))) / var(--items));
+  border: 1px solid var(--bright-gray);
+  padding-top: 168px;
+  background-position: top;
+  background-size: 255px 148px;
+  background-repeat: no-repeat;
+}
+
+.broadcasts__item-1 {
+  background-image: url("/img/broadcast_1.jpg");
+}
+
+.broadcasts__item-2 {
+  background-image: url("/img/broadcast_2.jpg");
+}
+
+.broadcasts__item-3 {
+  background-image: url("/img/broadcast_3.jpg");
+}
+
+.broadcasts__item-4 {
+  background-image: url("/img/broadcast_4.jpg");
+}
+
+.broadcasts__item-5 {
+  background-image: url("/img/broadcast_5.jpg");
+}
+
+.broadcasts__item-6 {
+  background-image: url("/img/broadcast_6.jpg");
+}
+
+.broadcasts__item-content {
+  padding-left: 14px;
+  padding-bottom: 20px;
+}
+
+.broadcasts__item-title {
+  color: var(--deep-dark-gray);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.broadcasts__item-descr {
+  color: var(--gray);
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.broadcasts__link {
+  color: var(--deep-dark-gray);
+  font-size: 16px;
+  font-style: italic;
   font-weight: 400;
 }
