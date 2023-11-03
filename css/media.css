@@ -60,6 +60,16 @@
     --offsets: 1;
     --items: 2;
   }
+
+  .brodcasts__btn {
+    margin-bottom: 8px;
+  }
+
+  .broadcasts__left-descr {
+    width: 255px;
+    line-height: 180%;
+  }
+
 }
 
 @media(max-width: 998px) {
@@ -99,6 +109,27 @@
 
   .podcasts__item {
     width: 100%;
+  }
+
+  /* BROADCASTS */
+  .broadcasts__title {
+    margin-bottom: 119px;
+  }
+
+  .broadcasts__content {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  .broadcasts__left {
+    width: 351px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-left: 116px;
+    background-position: left;
+    background-size: 70px 96px;
   }
 }
 
