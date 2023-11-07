@@ -56,18 +56,81 @@
   }
 
   /* BROADCASTS */
+  .broadcasts__container {
+    padding-bottom: 96px;
+  }
+
   .broadcasts__item {
     --offsets: 1;
     --items: 2;
   }
 
   .brodcasts__btn {
-    margin-bottom: 8px;
+    margin-bottom: 11px;
   }
 
   .broadcasts__left-descr {
     width: 255px;
-    line-height: 180%;
+  }
+
+  /* GUESTS */
+  .guests__descr-bottom {
+    max-width: 536px;
+  }
+
+  /* PLAYLISTS */
+  .playlists__content {
+    flex-direction: column;
+    padding-top: 96px;
+    padding-bottom: 88px;
+  }
+
+  .playlists__left {
+    max-width: 100%;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .playlists__right {
+    max-width: 100%;
+  }
+
+  .playlists__item {
+    --offsets: 2;
+    --items: 3;
+    width: calc((100% - (30px * var(--offsets))) / var(--items));
+    min-height: 114px;
+    padding-top: 0;
+    padding-left: 115px;
+    background-position: left;
+    background-size: 112px;
+  }
+
+  .playlists__item-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-top: 37px;
+  }
+
+  .country-ru, .country-GB {
+    top: 0;
+    left: 0;
+  }
+
+  /* ADVERTISEMENT */
+  .adv__left {
+    margin-top: -35px;
+  }
+
+  .adv__right {
+    max-width: 397px;
+  }
+
+  .promo {
+    width: 100px;
+    height: 100px;
+    top: -6px
   }
 
 }
@@ -112,25 +175,104 @@
   }
 
   /* BROADCASTS */
+  .broadcasts__container {
+    padding-bottom: 27px;
+  }
+
   .broadcasts__title {
     margin-bottom: 119px;
   }
 
   .broadcasts__content {
     flex-direction: column-reverse;
-    justify-content: space-around;
+    align-items: center;
   }
 
   .broadcasts__left {
     width: 351px;
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
     padding-top: 0;
-    padding-left: 116px;
-    background-position: left;
+  }
+
+  .broadcasts__left {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 89px;
+    margin-left: -88px;
     background-size: 70px 96px;
   }
+
+  .broadcasts__left-descr {
+    line-height: 150%;
+  }
+
+  .broacasts__right {
+    margin-bottom: 59px;
+  }
+
+  .broadcasts__item {
+    min-height: 262px;
+  }
+
+  .broadcasts__item-content {
+    padding-bottom: 17px;
+  }
+
+  /* GUESTS */
+  .guests__item {
+    min-height: 642px;
+    padding-top: 369px;
+    padding-left: 0;
+    background-position: top;
+    background-size: 540px 340px;
+  }
+
+  .guests__item-title {
+    margin-bottom: 7px;
+  }
+
+  .guests__item-descr {
+    max-width: 362px;
+  }
+
+  .guests__item-btn {
+    padding: 9px 18px;
+  }
+
+  /* PLAYLISTS */
+  .playlists__content {
+    padding-bottom: 101px;
+  }
+
+  .playlists__item {
+    --offsets: 1;
+    --items: 2;
+  }
+
+  /* ADVERTISEMENT */
+  .adv__content {
+    flex-direction: column;
+    gap: 44px;
+  }
+
+  .promo {
+    width: 160px;
+    height: 160px;
+  }
+
+  .adv__right {
+    max-width: 100%;
+  }
+
+  .adv__title {
+    max-width: 441px;
+  }
+
+  .adv__wavy-line {
+    width: 539px;
+  }
+
 }
 
 @media(max-width: 480px) {
@@ -232,7 +374,7 @@
 
   .item__date {
     top: 0;
-    bottom: 169px;
+    left: 0;
   }
 
   .podcasts__item-title {
@@ -243,5 +385,206 @@
     font-size: 12px;
   }
 
+  /* BROADCASTS */
+  .broadcasts__container {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .broadcasts__title {
+    margin-bottom: 28px;
+  }
+
+  .broadcasts__item {
+    min-height: 149px;
+    padding-top: 60px;
+    background-size: 113px 50px;
+  }
+
+  .broadcasts__item-content {
+    padding: 0 9px 7px 9px;
+  }
+  
+  .broadcasts__left {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-left: -42px;
+    background-size: 77px 105px;
+  }
+
+  .broadcasts__left-descr {
+    width: 166px;
+    line-height: 150%;
+    margin-bottom: 5px;
+  }
+
+  .brodcasts__btn {
+    margin-bottom: 0;
+    padding: 7px 29px;
+  }
+
+  .broacasts__right {
+    margin-bottom: 34px;
+  }
+
+  .broadcasts__item-title {
+    font-size: 12px;
+  }
+
+  .broadcasts__item-descr {
+    height: 18px;
+    font-size: 9px;
+  }
+
+  .broadcasts__link {
+    color: var(--purple);
+    font-size: 12px;
+  }
+
+  .broadcasts__item-1 {
+    background-image: url("/img/broadcast-1_320.jpg");
+  }
+  
+  .broadcasts__item-2 {
+    background-image: url("/img/broadcast-2_320.jpg");
+  }
+  
+  .broadcasts__item-3 {
+    background-image: url("/img/broadcast-3_320.jpg");
+  }
+  
+  .broadcasts__item-4 {
+    background-image: url("/img/broadcast-4_320.jpg");
+  }
+  
+  .broadcasts__item-5 {
+    background-image: url("/img/broadcast-5_320.jpg");
+  }
+  
+  .broadcasts__item-6 {
+    background-image: url("/img/broadcast-6_320.jpg");
+  }
+
+  /* GUESTS */
+  .guests__content {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .guests__descr-top {
+    margin-bottom: 0;
+  }
+
+  .guests__descr-bottom {
+    margin-bottom: 28px;
+  }
+
+  .guests__list {
+    gap: 30px;
+  }
+
+  .guests__item {
+    min-height: 525px;
+    padding-top: 172px;
+    background-size: 256px 159px;
+  }
+
+  .guests__descr-top {
+    font-size: 14px;
+  }
+
+  .guests__descr-bottom {
+    font-size: 14px;
+  }
+
+  .guests__item-btn {
+    padding: 6px 13px;
+  }
+
+  /* PLAYLISTS */
+  .playlists__content {
+    padding-top: 53px;
+    padding-bottom: 57px;
+  }
+
+  .playlists__item {
+    padding-left: 0;
+    padding-top: 121px;
+    background-position: top;
+    background-size: 113px;
+  }
+
+  .playlists__title {
+    margin-bottom: 12px;
+  }
+  
+  .playlists__item-content {
+    padding: 0;
+    padding-left: 8px;
+    padding-bottom: 11px;
+  }
+
+  .playlists__item-title {
+    font-size: 12px;
+  }
+
+  .playlists__item-descr {
+    font-size: 9px;
+  }
+
+  .playlists__descr {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .playlists__copy {
+    font-size: 12px;
+  }
+
+  .country-ru, .country-GB {
+    top: 0;
+    right: 0;
+    left: auto;
+  }
+
+   /* ADVERTISEMENT */
+   .adv__content {
+    gap: 27px;
+    padding-bottom: 54px;
+   }
+
+   .promo {
+    width: 62px;
+    height: 62px;
+   }
+
+   .adv__right {
+    gap: 13px;
+   }
+
+   .adv__title {
+    margin-bottom: 13px;
+   }
+
+   .adv__wavy-line {
+    margin-bottom: 17px;
+  }
+
+   .adv__descr-top, .adv__descr-bottom {
+    line-height: 157%;
+   }
+
+   .adv__right-price {
+    font-size: 24px;
+   }
+
+   .adv__btn {
+    padding: 15px 13px 13px 13px;
+   }
+
+   .adv__btn-descr {
+    font-size: 16px;
+   }
 
 }
