@@ -870,11 +870,14 @@ p {
   flex-direction: column;
   align-items: center;
   padding-top: 94px;
+  padding-bottom: 10px;
 }
 
 .footer__top {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 94px;
 }
 
 .footer__left {
@@ -895,9 +898,41 @@ p {
   fill: var(--light-gray)
 }
 
+.footer__nav {
+  display: flex;
+  gap: 109px;
+}
+
+.footer__nav-list-left, 
+.footer__nav-list-middle,
+.footer__nav-list-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__nav-item-link {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .copyright {
   color: var(--gray);
   font-size: 16px;
   font-weight: 400;
   line-height: 103.336%;
+  padding-top: 12px;
+}
+
+.footer__bottom {
+  position: relative;
+  padding-top: 12px;
+}
+
+.footer__bottom::before {
+  content: url("/img/footer-wavy-line.svg");
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
