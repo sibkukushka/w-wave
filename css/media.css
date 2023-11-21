@@ -318,6 +318,10 @@
   }
 
   /* ABOUT-US */
+  .about-us__conent {
+    padding-bottom: 91px;
+  }
+
   .about-us__descr {
     position: relative;
     padding-right: 0;
@@ -361,6 +365,33 @@
 
   .form__input {
     width: 100%;
+  }
+
+  /* FOOTER */
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 75px;
+  }
+
+  .footer__left {
+    margin-bottom: 73px;
+    align-items: center;
+  }
+
+  .footer__social-item svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer__nav {
+    gap: 156px;
+  }
+
+  .footer__nav-list-left, 
+  .footer__nav-list-middle, 
+  .footer__nav-list-right {
+    gap: 28px;
   }
 
 }

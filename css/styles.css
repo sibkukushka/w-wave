@@ -931,7 +931,7 @@ p {
 }
 
 .footer__bottom::before {
-  content: url("/img/footer-wavy-line.svg");
+  /* content: url("/img/footer-wavy-line.svg"); */
   position: absolute;
   top: 0;
   width: 100%;
