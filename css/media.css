@@ -711,7 +711,7 @@
    /* ABOUT-US */
    .about-us__conent {
     padding-top: 57px;
-    padding-bottom: 57px;
+    padding-bottom: 52px;
   }
 
   .about-us__descr {
@@ -789,5 +789,58 @@
 
   .form__agreement {
     font-size: 9px;
+  }
+
+  /* FOOTER */
+  .container-footer {
+    max-width: 100%;
+  }
+
+  .footer__content {
+    max-width: 100%;
+    padding-top: 53px;
+  }
+
+  .footer__top {
+    max-width: 100%;
+    padding-bottom: 6px;
+  }
+
+  .footer__left {
+    margin-bottom: 48px;
+  }
+
+  .footer__right {
+    width: 100%;
+    /* width: 320px; */
+    align-self: flex-start;
+    background-color: var(--deep-dark-gray);
+    /* margin-left: -31px; */
+    /* padding-left: 31px; */
+    padding: 28px 0 30px 31px;
+  }
+
+  .footer__nav {
+    display: none;
+  }
+
+  .footer__nav-320 {
+    display: flex;
+    align-items: flex-start;
+    gap: 79px;
+  }
+
+  .footer__nav-list-left, 
+  .footer__nav-list-middle, 
+  .footer__nav-list-right {
+    gap: 17px;
+  }
+
+  .footer__nav-item-link {
+    font-size: 12px;
+  }
+
+  .copyright {
+    font-size: 12px;
   }
 }
