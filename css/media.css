@@ -5,9 +5,22 @@
   }
 
 /* HEADER */
+  .header {
+    position: relative;
+  }
+
+  .header::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--bright-gray);
+    bottom: 62px;
+  }
+
   .header__content {
     padding-top: 28px;
-    padding-bottom: 6px;
+    padding-bottom: 10px;
     gap: 23px; 
   }
 
@@ -38,7 +51,7 @@
   }
 
   .hero__content {
-    padding-top: 89px;
+    padding-top: 84px;
     padding-bottom: 83px;
   }
   
@@ -175,6 +188,11 @@
   
   .about-us__item-4 {
     background-image: url("/img/about-us-4_1024.jpg");
+  }
+
+  /* FOOTER */
+  .footer::before {
+    content: url("/img/footer-wavy-line_1024.svg");
   }
 }
 
@@ -368,6 +386,10 @@
   }
 
   /* FOOTER */
+  .footer::before {
+    content: url("/img/footer-wavy-line_768.svg");
+  }
+
   .footer__top {
     flex-direction: column;
     align-items: center;
@@ -792,6 +814,10 @@
   }
 
   /* FOOTER */
+  .footer::before {
+    content: url("/img/footer-wavy-line_320.svg");
+  }
+
   .container-footer {
     max-width: 100%;
   }
@@ -812,11 +838,8 @@
 
   .footer__right {
     width: 100%;
-    /* width: 320px; */
     align-self: flex-start;
     background-color: var(--deep-dark-gray);
-    /* margin-left: -31px; */
-    /* padding-left: 31px; */
     padding: 28px 0 30px 31px;
   }
 
